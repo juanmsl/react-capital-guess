@@ -1,28 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import styled from 'styled-components';
 import { Globe, CheckCircle, XCircle } from 'lucide-react';
-
-const countries = {
-  "africa": {
-    "AGO": { "country": "Angola", "capital": "Luanda" },
-    "DZA": { "country": "Argelia", "capital": "Argel" },
-    "BEN": { "country": "Benín", "capital": "Porto-Novo" },
-    "BWA": { "country": "Botsuana", "capital": "Gaborone" },
-    "BFA": { "country": "Burkina Faso", "capital": "Uagadugú" }
-  },
-  "america_north": {
-    "CAN": { "country": "Canadá", "capital": "Ottawa" },
-    "USA": { "country": "Estados Unidos", "capital": "Washington D.C." },
-    "MEX": { "country": "México", "capital": "Ciudad de México" }
-  },
-  "europe": {
-    "DEU": { "country": "Alemania", "capital": "Berlín" },
-    "ESP": { "country": "España", "capital": "Madrid" },
-    "FRA": { "country": "Francia", "capital": "París" },
-    "ITA": { "country": "Italia", "capital": "Roma" },
-    "GBR": { "country": "Reino Unido", "capital": "Londres" }
-  }
-};
+import countries from './capitals.json';
 
 const AppContainer = styled.div`
   min-height: 100vh;
